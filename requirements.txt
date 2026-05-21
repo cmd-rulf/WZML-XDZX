@@ -1,4 +1,5 @@
 asyncio
+beautifulsoup4
 aiofiles
 aiohttp
 aioshutil
