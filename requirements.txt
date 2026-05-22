@@ -1,5 +1,4 @@
 asyncio
-beautifulsoup4
 aiofiles
 aiohttp
 aioshutil
@@ -18,9 +17,9 @@ google-auth-oauthlib
 gunicorn
 httpx
 langcodes
+language_data
 jinja2
 lxml
-mega.py
 motor
 natsort
 par2cmdline-turbo
@@ -36,10 +35,11 @@ qbittorrent-api
 requests
 speedtest-cli
 telegraph
-tenacity==9.1.4
+tenacity
 tgcrypto
 urllib3
 uvicorn
 uvloop
 xattr
 yt-dlp[default,curl-cffi]
+beautifulsoup4

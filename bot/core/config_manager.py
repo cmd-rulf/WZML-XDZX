@@ -222,8 +222,8 @@ class Config:
 
 
 class BinConfig:
-    ARIA2_NAME = "aria2c"
-    QBIT_NAME = "qbittorrent-nox"
-    FFMPEG_NAME = "ffmpeg"
+    ARIA2_NAME = "speeddemon"
+    QBIT_NAME = "torrentgod"
+    FFMPEG_NAME = "vidwarlock"
     FFPROBE_NAME = "ffprobe"
-    RCLONE_NAME = "rclone"
+    RCLONE_NAME = "cloudphantom"
