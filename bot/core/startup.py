@@ -40,8 +40,8 @@ async def update_qb_options(force_mode=None):
         for k in list(qbit_options.keys()):
             if k.startswith("rss"):
                 del qbit_options[k]
-        qbit_options["web_ui_password"] = "admin"
-        qbit_options["web_ui_password"] = "admin"
+        qbit_options["web_ui_password"] = "admin123"
+        qbit_options["web_ui_password"] = "admin123"
         # Performance Tuning based on Server Mode
         is_high_perf = force_mode if force_mode is not None else Config.HIGH_PERFORMANCE_MODE
         if is_high_perf:
@@ -61,7 +61,7 @@ async def update_qb_options(force_mode=None):
                 "upload_choking_algorithm": "upload_choking_algorithm_round_robin"
             })
         await TorrentManager.qbittorrent.app.set_preferences(
-            {"web_ui_password": "admin"}
+            {"web_ui_password": "admin123"}
         )
     else:
         await TorrentManager.qbittorrent.app.set_preferences(qbit_options)
