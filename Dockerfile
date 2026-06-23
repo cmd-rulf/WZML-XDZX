@@ -1,9 +1,10 @@
-FROM elitemind/wzmlxdz:main
+FROM sahan336/wzmlx:heroku
 
 WORKDIR /usr/src/app
-RUN chmod +x start.sh || true
+RUN chmod 777 /usr/src/app
 
 COPY . .
-RUN .venv/bin/pip install --no-cache-dir -r requirements.txt
+RUN pip install --upgrade pip setuptools
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 CMD ["bash", "start.sh"]
