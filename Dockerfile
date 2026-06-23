@@ -1,7 +1,13 @@
-FROM mysterysd/wzmlx:v3
+FROM elitemind/wzmlxdz:main
 
 WORKDIR /usr/src/app
 
+COPY requirements.txt .
+
+RUN uv pip install --python /venv/bin/python install --no-cache-dir -r requirements.txt
+
 COPY . .
 
-ENTRYPOINT ["bash", "start.sh"]
+RUN chmod +x start.sh || true
+
+CMD ["bash", "start.sh"]
